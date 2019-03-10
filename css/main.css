@@ -1,0 +1,208 @@
+@import url(reset.css);
+@import url(https://fonts.googleapis.com/css?family=Pangolin&subset=cyrillic,latin-ext);
+*{
+	box-sizing:border-box;
+}
+body {
+	width: 100%;
+	height: 100%;
+	font: 12px 'Pangolin', sans-serif;
+	color: #8b8b8b;
+	background: #FFFFFF;
+}
+.wrapper{
+	width: 100%;
+	height: 100%;
+}
+header{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	Justify-content: space-between;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 56px;
+	background:rgba(224, 243, 247, 0.350);
+	z-index: 5;
+}
+header .logo{
+	display: flex;
+	margin-left: 125px;
+	font: 27px 'Pangolin', sans-serif;
+	color: #ffffff;
+	align-self: center;
+}
+header div .img{
+	background-image: url(../img/Untitled-3-Recovered.png);
+	background-position: -11px -18px;
+	width: 30px;
+	height: 30px;
+}
+header .mob-nav{
+	margin-right: 125px;
+	font: 27px 'Pangolin', sans-serif;
+	color: #ffffff;
+}
+.mob-nav .btn-mob{
+	background-image: url(../img/Untitled-3-Recovered.png);
+	background-position: 1px -95px;
+	width: 60px;
+	height: 56px;
+	background-color: rgba(255, 255, 255, 0.300);
+	border: none;
+}
+.drop-list{
+	display: block;
+	padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 18px;
+    position: absolute;
+	top: 55px;
+	right: 16px;
+}
+.hidden{
+	display: none;
+}
+.drop-list li a{
+	display: inline-block;
+	font: 22px 'Pangolin', sans-serif;
+	color: #B7B7B7;
+	text-decoration: none;
+	padding-top: 10px;
+}
+.top-box{
+	min-width: 100%;
+	height: 520px;
+	background: url(../img/background.jpg) no-repeat;
+	background-size: 100%;
+}
+.search-box{
+	display: inline-block;
+	margin-top: 200px;
+	margin-left: 170px;
+	text-align: center;
+}
+.search-box p{
+	display: inline-block;
+	font: 27px 'Pangolin', sans-serif;
+	color: #ffffff;
+	height: 65px;
+	width: 340px;
+}
+.search-box form{
+	position: relative;
+	height: 45px;
+	width: 420px;
+	margin-top: 30px;
+}
+.search-box form input{
+	display: inline-block;
+	border: none;
+	height: 45px;
+	width: 360px;
+	padding-left: 10px; 
+	font: 21px 'Pangolin', sans-serif;
+	color: #afafaf54;
+}
+.search-box form button{
+	position: absolute;
+    right: 0;
+	height: 45px;
+	width: 60px;
+	border: none;
+	background-color: #ffffff;
+	background-image: url(../img/Untitled-3-Recovered.png);
+    background-position: 4px -46px;
+}
+.centr-box{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+	min-height: 115px;
+	border-bottom: 2px solid #E9E9E9;
+}
+.centr-box h2{
+	font: 37px 'Pangolin', sans-serif;
+	color: #8b8b8b;
+	padding: 7px 35px 0 0;
+}
+.centr-box button{
+	border: none;
+	height: 60px;
+	width: 260px;
+	padding-left: 10px; 
+	font: 37px 'Pangolin', sans-serif;
+	color: #ffffff;
+	background-color: #8FCDDC;
+}
+.bottom-box{
+	min-height: 285px;
+}
+.bottom-box h3{
+	text-align: center;
+	font: 23px 'Pangolin', sans-serif;
+	color: #8b8b8b;
+	margin: 30px 0 30px 0;
+}
+.bottom-box nav{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	Justify-content: space-around;
+}
+.bottom-box nav li{
+	padding: 5px 5px;
+}
+.bottom-box nav li a{
+	font: 15px 'Pangolin', sans-serif;
+	color: #B7B7B7;
+	text-decoration: none;
+}
+footer{
+	height: 65px;
+	width: 100%;
+	background: #484242;
+	border-top: 1px solid #7B7777;
+	border-bottom: 1px solid #7B7777;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+}
+footer h4{
+	font: 18px 'Pangolin', sans-serif;
+	color: #ffffff;
+}
+
+/* @media*/
+
+/* @media all and (height:100px){
+	header{
+		background:rgba(224, 243, 247, 0.850) !important;
+		
+	}*/
+	@media all and (max-width:750px){
+		.search-box{
+			margin-top: 60px;
+			margin-left: 20px;
+		}
+		.top-box{
+			height: 260px;
+		}
+		header .logo{
+			margin-left: 25px;
+		}
+		header .mob-nav{
+			margin-right: 25px;
+		}
+		.search-box form{
+			width: 340px;
+		}
+		.search-box form input{
+			width: 280px;
+		}
+	}
