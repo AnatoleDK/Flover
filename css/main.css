@@ -177,32 +177,24 @@ footer h4{
 	font: 18px 'Pangolin', sans-serif;
 	color: #ffffff;
 }
-
-/* @media*/
-
-/* @media all and (height:100px){
-	header{
-		background:rgba(224, 243, 247, 0.850) !important;
-		
-	}*/
-	@media all and (max-width:750px){
-		.search-box{
-			margin-top: 60px;
-			margin-left: 20px;
-		}
-		.top-box{
-			height: 260px;
-		}
-		header .logo{
-			margin-left: 25px;
-		}
-		header .mob-nav{
-			margin-right: 25px;
-		}
-		.search-box form{
-			width: 340px;
-		}
-		.search-box form input{
-			width: 280px;
-		}
-	}
+@media all and (max-width:750px){
+.search-box{
+	margin-top: 60px;
+	margin-left: 20px;
+}
+.top-box{
+	height: 260px;
+}
+header .logo{
+	margin-left: 25px;
+}
+header .mob-nav{
+	margin-right: 25px;
+}
+.search-box form{
+	width: 340px;
+}
+.search-box form input{
+	width: 280px;
+}
+}
